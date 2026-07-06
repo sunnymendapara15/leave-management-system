@@ -31,9 +31,10 @@ function App() {
   const fetchBalances = async () => {
     try {
       const response = await axios.get(`/api/leaves/balances/${employeeId}`);
-      setBalances(response.data.balances);
+      setBalances(response.data?.balances ?? []);
     } catch (error) {
       setMessage(error.response?.data?.detail || "Unable to load balances.");
+      setBalances([]);
     }
   };
 
@@ -115,7 +116,7 @@ function App() {
       <section className="grid">
         <article className="card shadow">
           <h2>Current Balances</h2>
-          {balances.length ? (
+          {balances?.length ? (
             <ul>
               {balances.map((line) => (
                 <li key={line.leave_type_code}>
