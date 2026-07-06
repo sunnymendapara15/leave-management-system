@@ -41,9 +41,10 @@ function App() {
   const fetchRequests = async () => {
     try {
       const response = await axios.get(`/api/leaves/requests/${employeeId}`);
-      setRequests(response.data);
+      setRequests(response.data ?? []);
     } catch (error) {
       setMessage(error.response?.data?.detail || "Unable to load history.");
+      setRequests([]);
     }
   };
 
@@ -201,7 +202,7 @@ function App() {
 
       <section className="card shadow">
         <h2>Leave History</h2>
-        {requests.length ? (
+        {requests?.length ? (
           <table>
             <thead>
               <tr>
