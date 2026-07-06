@@ -1,0 +1,13 @@
+:root {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f6f7fb;
+}
+
+body {
+  margin: 0;
+  background: #f6f7fb;
+}
+
+button {
+  cursor: pointer;
+}

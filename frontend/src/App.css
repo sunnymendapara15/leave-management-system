@@ -1,0 +1,156 @@
+.app-shell {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+header .tone {
+  color: #4a5568;
+  margin-top: 0.2rem;
+}
+
+.identity {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.identity input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #cbd5f5;
+}
+
+.message {
+  background: #edf2ff;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  color: #1f2933;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.card li {
+  margin-bottom: 6px;
+}
+
+.shadow {
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.request-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.request-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 600;
+}
+
+.request-form input,
+.request-form select,
+.request-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5f5;
+  font-size: 0.95rem;
+}
+
+.request-form textarea {
+  resize: vertical;
+}
+
+.request-form .checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+}
+
+.request-form button {
+  grid-column: 1 / -1;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #1d4ed8;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+table th,
+table td {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 8px 6px;
+  text-align: left;
+}
+
+.summary-card {
+  margin-top: 24px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.summary-grid div {
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+footer {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+footer button {
+  background: #0f172a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+}
